@@ -7,11 +7,12 @@ Android app for showing the current distance to Toripolliisi in Oulu marketplace
 * Location data
 
 ## Setup
-* Download and install the .apk
+* Download and install the [newest .apk](https://github.com/NikoDaGreat/Ettaisyyspolliisi/releases)
 
 ## Features to add
 * Better performance
 * About menu and settings
+* Navigation bar maybe
 
 ## Screenshots
 <img src="https://i.imgur.com/QvNfOTT.png" alt="White Toripolliisi" width="50%" height="50%"/><img src="https://i.imgur.com/lbMHYD9.png" alt="Pink Toripolliisi" width="50%" height="50%"/>

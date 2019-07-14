@@ -96,7 +96,7 @@ export default class App extends Component {
             </TouchableOpacity>
 
             <Text style={this.tekstiStyle()}>
-              {"\n"}Etäisyys Toripolliisiin on
+              {"\n"}Ettäisyys Toripolliisiin on
             </Text>
             <Text style={styles.etaisyys}>
              {String(haversine(start, toripolliisiLocation)).substring(0,6)} km
