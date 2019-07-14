@@ -1,4 +1,4 @@
-# ToripolliisiApp
+# Ettäisyyspolliisi
 
 Android app for showing the current distance to Toripolliisi in Oulu marketplace using React Native and GPS.
 
