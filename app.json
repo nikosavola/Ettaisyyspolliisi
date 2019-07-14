@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Etäisyyspolliisi",
+    "slug": "toripolliisiApp",
+    "privacy": "public",
+    "sdkVersion": "33.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.nikodg.toripolliisiapp"
+    },
+    "version": "4.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon2.png",
+    "splash": {
+      "image": "./assets/splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F80160"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
