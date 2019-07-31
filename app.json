@@ -9,6 +9,9 @@
       "android",
       "web"
     ],
+    "ios": {
+      "bundleIdentifier": "com.nikodg.toripolliisiapp"
+    },
     "android": {
       "package": "com.nikodg.toripolliisiapp"
     },

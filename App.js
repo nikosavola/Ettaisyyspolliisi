@@ -1,6 +1,6 @@
 // Begin: spaghetti code
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, ImageBackground, Alert, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, ImageBackground, Alert, TouchableOpacity, Dimensions} from 'react-native';
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
 
@@ -15,7 +15,6 @@ export default class App extends Component {
     flagImage: true,
     textColour: '#FA5695'
   };
-
 
   // location functions
 
@@ -65,7 +64,7 @@ export default class App extends Component {
   };
 
   render() {
-
+    const dimensions = Dimensions.get('window');
     const haversine = require('haversine');
 
     setTimeout(this._getLocationPerms, 1000); // 2s
@@ -92,7 +91,7 @@ export default class App extends Component {
             <Image source={ this.state.flagImage === true ?
                           require('./assets/ToripolliisiPink.png') :
                           require('./assets/ToripolliisiWhite.png')}
-                    style={{width: 400, height: 500, resizeMode: 'center'}} />
+                    style={{width: Math.round(dimensions.width * 13 / 16), height: Math.round(dimensions.height * 8 / 16), resizeMode: 'center'}} />
             </TouchableOpacity>
 
             <Text style={this.tekstiStyle()}>
@@ -118,7 +117,7 @@ const styles = StyleSheet.create({
 
   teksti: {
     fontFamily: 'sans-serif', // android default font
-    fontSize: 30,
+    fontSize: 26,
     textAlign: "center",
     margin: 10,
     color: '#FA5695' // muuhun #F80160
@@ -126,7 +125,7 @@ const styles = StyleSheet.create({
 
   etaisyys: {
     fontFamily: 'sans-serif-medium',
-    fontSize: 42,
+    fontSize: 36,
     textAlign: "center",
     fontWeight: 'bold',
     color: 'black'
