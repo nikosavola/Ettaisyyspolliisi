@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, Dimensions } from 'react-native'
 
-const Webcam = (navigation) => {
+const Webcam = ({ navigation }) => {
   const url = { uri: 'http://www.oulunkaupunki.fi/_private/kamera/picture1.jpg' }
 
   const dimensions = Dimensions.get('window')

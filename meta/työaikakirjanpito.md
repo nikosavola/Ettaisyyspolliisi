@@ -6,4 +6,5 @@ Työn pohjalla on kesänä 2019 tekemäni React Native sovellus, jonka koodasin 
 | :----:|:-----| :-----|
 | 20.7. | 3    | Refaktorointi FS-kurssin mukaiseksi |
 |       | 1    | Drawer-menu, Webcam, tyylit
-| **Σ** | 4    |
+| 22.7. | 2    | Screenshot ja sharing *react-native-view-shot*:lla, refaktorointi
+| **Σ** | x    |

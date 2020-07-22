@@ -1,16 +1,25 @@
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
-  container: {
+  container_pink: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#F80160',
+  },
+
+  container_white: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFF',
   },
 
   image_background: {
     flex: 1,
     width: '100%',
     height: '100%',
+    overflow: 'visible',
   },
 
   textW: {
@@ -52,5 +61,12 @@ export const styles = StyleSheet.create({
 
   drawer_content: {
     color: '#ffff',
+  },
+
+  hamburger: {
+    ...StyleSheet.absoluteFillObject,
+    alignSelf: 'flex-start',
+    marginTop: 500,
+    position: 'absolute',
   },
 })
