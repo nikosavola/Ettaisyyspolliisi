@@ -1,18 +1,31 @@
-import { StyleSheet } from 'react-native'
+import { StatusBar, StyleSheet, Platform } from 'react-native'
 
 export const styles = StyleSheet.create({
   container_pink: {
     flex: 1,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#F80160',
+    paddingTop: 10, // Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
 
   container_white: {
     flex: 1,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFFF',
+    paddingTop: 10,
+  },
+
+  container_webcam: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFF',
+    paddingTop: 10,
   },
 
   image_background: {
@@ -64,9 +77,12 @@ export const styles = StyleSheet.create({
   },
 
   hamburger: {
-    ...StyleSheet.absoluteFillObject,
+    alignSelf: 'flex-end',
+    margin: 8,
+  },
+
+  home_side: {
     alignSelf: 'flex-start',
-    marginTop: 500,
-    position: 'absolute',
+    width: '5%',
   },
 })
