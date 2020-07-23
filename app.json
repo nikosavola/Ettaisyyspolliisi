@@ -3,14 +3,13 @@
     "name": "Ettäisyyspolliisi",
     "slug": "toripolliisiApp",
     "privacy": "public",
-    "sdkVersion": "33.0.0",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
     "ios": {
-      "bundleIdentifier": "com.nikodg.toripolliisiapp"
+      "supportsTablet": true
     },
     "android": {
       "package": "com.nikodg.toripolliisiapp"
@@ -28,9 +27,6 @@
     },
     "assetBundlePatterns": [
       "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
+    ]
   }
 }

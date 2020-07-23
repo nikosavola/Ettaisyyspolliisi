@@ -1,23 +1,67 @@
 {
+  "name": "Ettaisyyspolliisi",
+  "description": "See distance to Toripolliisi",
+  "author": "Niko Savola",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "eslint .",
+    "test": "jest"
   },
   "dependencies": {
-    "expo": "^33.0.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/drawer": "^5.8.6",
+    "@react-navigation/native": "^5.7.1",
+    "expo": "^38.0.0",
+    "expo-sharing": "~8.2.1",
     "haversine": "^1.1.1",
-    "react": "16.8.3",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-material-menu": "^0.6.3",
-    "react-native-web": "^0.11.4"
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-hamburger": "0.0.2",
+    "react-native-image-pan-zoom": "^2.1.12",
+    "react-native-maps": "0.27.1",
+    "react-native-material-menu": "^1.1.3",
+    "react-native-reanimated": "~1.9.0",
+    "react-native-safe-area-context": "~3.0.7",
+    "react-native-screens": "~2.9.0",
+    "react-native-view-shot": "3.1.2",
+    "react-native-web": "~0.11.7"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.1.1"
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "babel-preset-expo": "^8.2.3",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.20.3",
+    "jest": "^26.1.0",
+    "react-test-renderer": "^16.13.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|react-clone-referenced-element|expo(nent)?|@unimodules/.*|jest-expo/.*|@expo(nent)?/.*|react-navigation|@react-navigation/.*|sentry-expo|native-base))"
+    ],
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!**/coverage/**",
+    "!**/node_modules/**",
+    "!**/babel.config.js",
+    "!**/jest.setup.js"
+    ]
   },
   "private": true
 }
