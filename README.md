@@ -1,5 +1,7 @@
 # Ettäisyyspolliisi
 
+![Build status](https://github.com/NikoDaGreat/Ettaisyyspolliisi/workflows/Test%20and%20Publish/badge.svg)
+
 Android app for showing the current distance to Toripolliisi in Oulu marketplace using React Native and GPS.
 
 ## Prerequisities

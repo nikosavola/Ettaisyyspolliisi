@@ -1,0 +1,23 @@
+name: Test and Publish
+# This workflow runs tests and publishes on Expo if main branch is pushed to.
+on:
+  push:
+    branches:
+      - master
+jobs:
+  publish:
+    name: Install, test and publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - uses: expo/expo-github-action@v5
+        with:
+          expo-version: 3.x
+          expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
+          expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
+      - run: yarn install
+      - run: yarn test
+      - run: expo publish
